@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: bold;
+    font-family: 'PT Serif', serif;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.description p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.creative-crew {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0px;
+
+}
+
+.description {
+    width: 50%;
+}
+
+.description p {
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.crew {
+    margin:0 80px 80px 0;
+}
+
+.image-container {
+    
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+
+img {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgb(187, 185, 185)  ;
+}
+
+.crew:nth-child(2),
+.crew:nth-child(5)  {
+    transform: translate(0, 70px);
+  }
+
+span {
+    writing-mode: vertical-rl; 
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    font-family: 'PT Serif', serif;
+    padding-left: 20px;
+}
+
+.crew p {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 27px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        width: 860px;
+    }
+    img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        width: 800px;
+        margin-left: 20px;
+    }
+
+    img {
+        width: 280px;       
+    }
+
+    .crew:nth-child(2),
+    .crew:nth-child(4),
+    .crew:nth-child(6)  {
+        transform: translate(0, 70px);
+    }
+    .creative-crew {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .container {
+        justify-content: flex-start !important;
+    }
+
+    .crew {
+        margin:0 80px 80px 0;
+    }
+
+    .description {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .description p, .crew p, span {
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 10px;
+    }
+}
+
